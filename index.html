@@ -5,7 +5,10 @@
 	<title>Nuevo Trollyota CorLOLa</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans.css">
 	<script src="prefixfree.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="codiguito.js"></script>
 </head>
 <body>
 	<header>
@@ -30,16 +33,57 @@
 				<figcaption>
 					Trollyota CorLOLla
 					<ul>
-						<li><strong>Color:</strong> Rojo</li>
-						<li><strong>Techo:</strong> Mate</li>
-						<li><strong>Llantas:</strong>Baratas</li>
+						<li><strong>Color:</strong> <span id="AutoColor">Rojo</span></li>
+						<li><strong>Llantas:</strong> <span id="AutoLlanta">Baratas</span></li>
+						<li><strong>Techo:</strong> <span id="AutoTecho">Negro</span></li>
 					</ul>
 				</figcaption>
 			</figure>
+			<section id="personalizacion">
+				<article id="color">
+					<h2>Color</h2>
+					<div id="blanco">&nbsp;</div>
+					<div id="negro">&nbsp;</div>
+					<div id="rojo">&nbsp;</div>
+					<div id="azul">&nbsp;</div>
+					<div id="amarillo">&nbsp;</div>
+					<div id="verde">&nbsp;</div>
+				</article>
+				<article id="llantas">
+					<h2>Llantas</h2>
+					<figure id="llanta1">
+						<img src="llanta1.png" />
+						<figcaption>
+							Caras
+						</figcatption>
+					</figure>
+					<figure id="llanta2">
+						<img src="llanta2.png" />
+						<figcaption>
+							Baratas
+						</figcatption>
+					</figure>
+				</article>
+				<article id="techo">
+					<h2>Techo</h2>
+					<figure id="techo1">
+						<img src="techo1.png" />
+						<figcaption>
+							Techo blanco
+						</figcatption>
+					</figure>
+					<figure id="techo2">
+						<img src="techo2.png" />
+						<figcaption>
+							Techo negro
+						</figcatption>
+					</figure>
+				</article>
+			</section>
 	</section>
 	<nav>
-		<ul>
-			<li><a href="#">Personalizar</a></li>
+		<ul id="listanav">
+			<li><a href="#" id="personalizar">Personalizar</a></li>
 			<li><a href="#">Comprar</a></li>
 			<li><a href="#">Contactar</a></li>
 		</ul>
